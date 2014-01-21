@@ -6,7 +6,7 @@
 typedef List Queue;
 
 extern Queue queue_new(int elementSize);
-extern void queue_destroy(Queue *queue);
+extern void queue_free(Queue *queue);
 
 extern void* queue_add(Queue queue, void *element);
 extern void* queue_pop(Queue queue);

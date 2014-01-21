@@ -9,7 +9,7 @@ extern Queue queue_new(int elementSize)
   return q;
 }
 
-extern void queue_destroy(Queue *queue)
+extern void queue_free(Queue *queue)
 {
   assert(queue && *queue);
   list_free(queue);
