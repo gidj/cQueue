@@ -12,7 +12,7 @@ extern Queue queue_new(int elementSize)
 extern void queue_destroy(Queue *queue)
 {
   assert(queue && *queue);
-  list_destroy(queue);
+  list_free(queue);
   free(*queue);
   *queue = NULL;
 }
